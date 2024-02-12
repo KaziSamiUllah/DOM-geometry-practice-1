@@ -10,3 +10,13 @@ function triangleArea() {
     triAreaSpan.innerText = area;
 
 }
+
+function rectangleArea(){
+    const rectWidth = (document.getElementById('rect-widht')).value;
+    const rectHeight = (document.getElementById('rect-height')).value;
+    console.log(rectWidth, rectHeight)
+    const rectArea= rectHeight * rectWidth;
+    document.getElementById('area-rectangle').innerText = rectArea;
+   
+    console.log(rectArea);
+}
