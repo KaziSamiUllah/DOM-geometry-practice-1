@@ -20,3 +20,17 @@ function rectangleArea(){
    
     console.log(rectArea);
 }
+
+
+function rhombusArea(){
+    const rhombusD1 = getValueFromId('rhombus-d1');
+    const rhombusD2 = getValueFromId('rhombus-d2');
+    const rhomArea  = 0.5 * rhombusD1 * rhombusD2; 
+document.getElementById('area-rhombus').innerText = rhomArea;
+}
+
+
+function getValueFromId(itemID){
+    const valueOfID= parseFloat(document.getElementById(itemID).value);
+    return(valueOfID);
+}
